@@ -1,11 +1,16 @@
 {
-  "name": "version",
+  "name": "social-media-client",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:dist/css",
-    "start": "sass --watch src/scss:dist/css & live-server"
+    "start": "sass --watch src/scss:dist/css & live-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint --fix src/**/*.js"
   },
   "keywords": [],
   "author": "Noroff",
@@ -17,7 +22,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
     "prettier": "^3.0.2",
-
+    "babel-eslint": "^10.1.0",
     "eslint-plugin-vue": "^9.10.0",
     "live-server": "^1.2.2",
     "sass": "^1.54.8"
@@ -284,5 +289,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+   
+
   }
 }
