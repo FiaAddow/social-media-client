@@ -6,7 +6,8 @@
   "scripts": {
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test-e2e",
+    "test-e2e": "cypress open",
     "prepare": "husky install",
     "precommit": "lint-staged",
     "lint": "eslint src/**/*.js",
@@ -25,7 +26,10 @@
     "babel-eslint": "^10.1.0",
     "eslint-plugin-vue": "^9.10.0",
     "live-server": "^1.2.2",
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+
+    "cypress": "^12.17.4",
+    "eslint-plugin-cypress": "^2.14.0"
   },
   "dependencies": {
     "accepts": "^1.3.8",
@@ -289,7 +293,5 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
-   
-
   }
 }
