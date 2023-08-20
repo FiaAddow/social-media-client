@@ -1,10 +1,8 @@
-
-
-  {
+{
     "env": {
-      "browser": true,
-      "es2021": true,
-      "node": true
+        "browser": true,
+        "es2021": true,
+        "node": true
     },
     "extends": [
         "eslint:recommended",
@@ -12,17 +10,26 @@
     ],
     "overrides": [
         {
-          "files": ["**/*.cy.js"],
-          "env": { "cypress/globals": true },
-          "plugins": ["cypress"],
-          "extends": ["plugin:cypress/recommended", "eslint:recommended", 
-          "plugin:vue/vue3-essential"],
-          "rules": {
-            "cypress/no-unnecessary-waiting": "off",
-            "no-unused-vars": "off"
-          }
+            "files": [
+                "**/*.cy.js"
+            ],
+            "env": {
+                "cypress/globals": true
+            },
+            "plugins": [
+                "cypress"
+            ],
+            "extends": [
+                "plugin:cypress/recommended",
+                "eslint:recommended",
+                "plugin:vue/vue3-essential"
+            ],
+            "rules": {
+                "cypress/no-unnecessary-waiting": "off",
+                "no-unused-vars": "off"
+            }
         }
-      ],
+    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -30,9 +37,5 @@
     "plugins": [
         "vue"
     ],
-    "rules": {
-      
-
-    }
-  }
-  
+    "rules": {}
+}
