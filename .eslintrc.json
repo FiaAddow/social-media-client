@@ -1,22 +1,27 @@
-{
+
+
+  {
     "env": {
       "browser": true,
-      "es2021": true
+      "es2021": true,
+      "node": true
     },
-    "extends": [
-      "eslint:recommended",
-      "plugin:prettier/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings"
+    "extends": "eslint:recommended",
+    "overrides": [
+      {
+        "files": ["**/*.cy.js"],
+        "env": { "cypress/globals": true },
+        "plugins": ["cypress"],
+        "extends": ["plugin:cypress/recommended"],
+        "rules": {
+          "cypress/no-unnecessary-waiting": "off",
+          "no-unused-vars": "off"
+        }
+      }
     ],
-    "parser": "babel-eslint",
     "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 6
-    },
-    "plugins": ["prettier"],
-    "rules": {
-      
+      "ecmaVersion": "latest",
+      "sourceType": "module"
     }
   }
   

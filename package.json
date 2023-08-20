@@ -265,8 +265,10 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^12.17.4",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.14.0",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
@@ -277,14 +279,13 @@
     "prepare": "husky install",
     "precommit": "lint-staged",
     "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint --fix src/**/*.js"
-
+    "lint-fix": "eslint --fix src/**/*.js",
+    "test": "npm run test-e2e",
+    "test-e2e": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "lint-staged": {
     "*.js": "eslint --cache --fix"
-   
-
   }
 }
