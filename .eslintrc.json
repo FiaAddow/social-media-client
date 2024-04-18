@@ -6,7 +6,6 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/vue3-essential"
     ],
     "overrides": [
         {
@@ -22,7 +21,6 @@
             "extends": [
                 "plugin:cypress/recommended",
                 "eslint:recommended",
-                "plugin:vue/vue3-essential"
             ],
             "rules": {
                 "cypress/no-unnecessary-waiting": "off",
@@ -34,8 +32,6 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [
-        "vue"
-    ],
+ 
     "rules": {}
 }
