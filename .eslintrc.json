@@ -5,7 +5,7 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended",
+        "eslint:recommended"
     ],
     "overrides": [
         {
@@ -20,7 +20,7 @@
             ],
             "extends": [
                 "plugin:cypress/recommended",
-                "eslint:recommended",
+                "eslint:recommended"
             ],
             "rules": {
                 "cypress/no-unnecessary-waiting": "off",
