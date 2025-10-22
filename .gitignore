@@ -1,11 +1,11 @@
 /node_modules
 /dist
-/.husky
-/.vscode
-/.eslintcache
-/.eslintrc.js
-/..eslintrc.json
-/.prettierrc.js
+.husky
+.vscode
+.eslintcache
+.eslintrc.js
+.eslintrc.json
+.prettierrc.js
 
 
 
