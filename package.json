@@ -1,6 +1,8 @@
 {
   "name": "social-media-client",
+  "name": "social-media-client",
   "version": "1.0.0",
+  "description": "",
   "description": "",
   "main": "index.js",
   "dependencies": {
