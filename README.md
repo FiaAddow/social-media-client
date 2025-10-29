@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-readme file
-- remember to update this files.
-=======
 # Noroff Social Media Application Workflow Assignment
 
 ## Overview
@@ -40,4 +36,3 @@ The goal of this assignment was to utilize the skills and knowledge gained from 
 
 This README provides an overview of the workflow assignment completed for the Noroff Social Media Application. For further details or inquiries, please refer to the provided resources.
 
->>>>>>> workflow
