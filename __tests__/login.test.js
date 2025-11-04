@@ -7,17 +7,14 @@ global.localStorage = {
     getItem: (key) => global.localStorage[key]
 
 }
-
-
 describe('login function', () => {
-
-
-    it('should save token when login works', async () => {
+    it('should save token when logging in', async () => {
 
         const mockFetchSuccess = jest.fn().mockResolvedValue({
             ok: true,
             json: jest.fn().mockResolvedValue( { accessToken: 'mockToken' } )
         });
+
         global.fetch = mockFetchSuccess;
 
         const email = 'test@example.com';
