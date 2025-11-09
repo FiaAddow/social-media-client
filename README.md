@@ -10,5 +10,5 @@
 
 
 ## Difficulties
-I had problems running the cypress tests. Having the register and login components as modals that where made visible and hidden made testing them like a user problamatic since the login modal would be hidden behind the register modal. Tried getting help from AI with it but did not manage to get it working. Might be something to do with delay issue. 
+Did not manage to get the cypress error message popup to show in cypress login test. But both login and logout tests work. 
 
