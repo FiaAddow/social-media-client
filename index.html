@@ -110,7 +110,7 @@
       <div
         class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable"
       >
-        <form class="modal-content" id="loginForm" data-cy="loginForm">
+        <form class="modal-content" id="loginForm">
           <div class="modal-header">
             <h5 class="modal-title" id="loginModalLabel">Login</h5>
             <button
@@ -151,7 +151,6 @@
             <button
               type="reset"
               class="btn btn-secondary"
-              data-cy="login-close"
               data-bs-dismiss="modal"
             >
               Close
@@ -161,19 +160,12 @@
               class="btn btn-outline-success"
               data-bs-toggle="modal"
               data-bs-target="#registerModal"
-              data-cy="login-register"
               data-auth="register"
               data-visible="loggedOut"
             >
               Register
             </button>
-            <button
-              type="submit"
-              class="btn btn-success"
-              data-cy="login-submit"
-            >
-              Login
-            </button>
+            <button type="submit" class="btn btn-success">Login</button>
           </div>
         </form>
       </div>
@@ -191,13 +183,12 @@
       <div
         class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable"
       >
-        <form class="modal-content" id="registerForm" data-cy="registerForm">
+        <form class="modal-content" id="registerForm">
           <div class="modal-header">
             <h5 class="modal-title" id="registerModalLabel">Create Profile</h5>
             <button
               type="button"
               class="btn-close"
-              data-cy="register-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
@@ -255,7 +246,6 @@
             <button
               type="reset"
               class="btn btn-secondary"
-              data-cy="register-close"
               data-bs-dismiss="modal"
             >
               Close
@@ -264,18 +254,13 @@
               type="button"
               class="btn btn-outline-success"
               data-bs-toggle="modal"
-              data-cy="register-login"
               data-bs-target="#loginModal"
               data-auth="login"
               data-visible="loggedOut"
             >
               Login
             </button>
-            <button
-              type="submit"
-              class="btn btn-success"
-              data-cy="register-submit"
-            >
+            <button type="submit" class="btn btn-success">
               Create Profile
             </button>
           </div>
