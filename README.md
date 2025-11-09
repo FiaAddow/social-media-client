@@ -5,8 +5,8 @@
 2. `npm run start` to run project on localhost
 
 ## Run tests
-- To run jest tests run `npm run test`
-- To run cypress e2e tests run `npm run test-e2e`. This will open a cypress testing enviroment.
+- To run both tests run `npm run test`
+- To run cypress test in window run `npm run test-e2e-open`
 
 
 ## Difficulties

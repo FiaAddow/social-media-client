@@ -26,12 +26,29 @@
                 "cypress/no-unnecessary-waiting": "off",
                 "no-unused-vars": "off"
             }
+        },
+        {
+            "files": [
+                "**/*.test.js",
+                "**/*.mock.js"
+            ],
+            "env": {
+                "jest": true
+            },
+            "plugins": [
+                "jest"
+            ],
+            "extends": [
+                "plugin:jest/recommended"
+            ],
+            "rules": {
+                "jest/prefer-expect-assertions": "off"
+            }
         }
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
- 
     "rules": {}
 }

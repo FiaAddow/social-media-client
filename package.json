@@ -6,8 +6,10 @@
   "scripts": {
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
-    "test": "jest",
-    "test-e2e": "cypress open",
+    "test": "npm run test-unit && npm run test-e2e",
+    "test-unit": "jest",
+    "test-e2e": "cypress run",
+    "test-e2e-open": "cypress open",
     "prepare": "husky",
     "pre-commit": "lint-staged",
     "lint": "eslint src/**/*.js",
